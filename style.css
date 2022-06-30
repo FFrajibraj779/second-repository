@@ -1,0 +1,483 @@
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Serif', sans-serif */
+
+
+    /* reser code and common code starts here */
+         
+       *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+        outline: 0;
+        font-weight: 400;
+       }
+       html{
+       background-color: rgb(241, 239, 234);
+       scroll-behavior: smooth;
+       font-size: 62.5%;
+       }
+       body{
+           background-color: white;
+         width: 120rem;  
+       
+           max-width: 100%;
+           margin: auto;
+           box-shadow: 1px 2px 0px 0px #ddd
+       }
+        h1, h2, h3, h4, h5, h6{
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: 'Italianno', cursive;
+            text-transform: capitalize;
+        }
+         
+        .justify-desc{
+            text-align: justify;
+        }
+        .about-heading-style{
+             text-align: center;
+             font-size: 8rem;
+        }
+        
+     /* reser code and common code ends here */
+
+
+      /* header design start here */
+#header{
+    display: flex;
+    justify-content: space-between;
+     background-color: black;
+     color: white;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     min-height: 5vh;
+     z-index: 10;
+     border: solid;
+     padding: 2rem 1rem;
+     min-height: 5vh;
+}
+.logo-figure{
+  margin-bottom: 1rem;
+border: 1px solid white;
+}
+.logo{
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+nav ul li{
+ display: inline-block;
+    padding: 1rem;
+    margin-right: 1.5rem;
+    transition: all 0.5s;
+}
+nav li:hover{
+    background-color: blueviolet;
+    border-radius: .7rem;
+}
+ 
+ 
+ 
+.nav-link{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+   
+}
+    /* header design start here */
+
+
+ /* resposive web design start here */
+
+ @media (max-width:992px) {
+    
+    #bannar-section{
+flex-direction: column;
+    }
+    article{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .cards-Container{
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+ }
+
+ 
+ @media (max-width:768px) {
+     
+     article{
+         width: 80%;
+     }
+     .cards-Container{
+        width: 80%;
+     }
+   
+}
+
+
+@media (max-width:600px) {
+     
+     header{ 
+           flex-direction: column;
+
+
+     }  
+
+     nav ul li{
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    
+}
+
+article{
+    width: 90%;
+}
+ 
+  
+ 
+#bannar-section{
+
+    min-height: auto;
+}
+ #blog-about{
+     min-height: auto;
+     display: flex;
+ }
+.cards-Container{
+    width: 90%;
+
+ }
+ #archives{
+     min-height: auto;
+     display: flex;
+ }
+ .archives-cards{
+    display: flex;
+    width: 90%;
+ }
+ .archives-singlebox{
+    display: flex;
+  
+    display: flex;
+}
+
+ 
+ }
+
+ 
+
+
+
+    /* resposive web design start here */
+
+
+
+
+    /* bannar section design starts here */
+    #bannar-section{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      
+    min-height: 95vh;  
+  
+    }
+    article{
+        flex-basis: 50%;
+        margin: 1rem;
+        text-align: center;
+    }
+    .article-heading{
+           font-size: 5rem;
+           font-weight: bolder;
+           background-color: black;
+           color: white;
+           width: 70%;
+           text-align: center;
+           margin:1rem auto;
+    }
+    .justify-desc{
+    text-align: justify;
+    text-align: center;
+    font-size: 1.5rem;
+    }
+    aside{
+        flex-basis: 50%;
+       text-align: center;
+    }
+    .cover-image{
+        max-width: 55rem;
+        max-height: 55rem;
+        border: .3rem solid;
+          /* margin: 4rem;  */
+        /* margin-right: 0; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* bannar section design ends here */
+
+
+
+
+    /* blog about design starts here */
+    #blog-about{
+       min-height: 95vh;
+       background-color: #4c4c4c;
+        padding: 5rem 1rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+    }
+    .about-heading{
+        color: white;
+    }
+    .cards-Container{
+        display: flex;
+        align-items: center;
+    }
+    .singlebox{
+        flex: 1;
+        padding: 4rem 2rem;
+        background-color: #a09d9d;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+        border-radius: 5px;
+    }
+    .singlebox:hover{
+        transform: scale(1.1);
+    }
+    .cards-heading{
+        font-size: 3rem;
+
+    }
+     
+    .singlebox .read-btn{
+       align-self: center;
+       width: 80%;
+       background-color: orange;
+       margin: 5rem 1rem 0rem 1rem;
+       padding: 0.9rem;
+       border-radius: 4px;
+       border-style: none;
+       box-shadow: 1px 3px 4px black;
+    }
+       .cards-desc{
+           text-align: justify;
+           font-size: 1.8rem;
+           margin-top: 1rem;
+       } 
+    
+        /* blog about design ends here */
+
+
+
+
+        /* archives design start here */
+
+
+        #archives{
+           display: flex;
+          min-height: 95vh;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+        }
+        .archives-cards{
+         display: flex;    
+         align-items: center;
+         justify-content: center;  
+         border-top: 1px solid;
+         border-bottom: 1px solid;
+         transition: 1s;
+         border-radius: 5px;
+         align-items: center;
+         justify-content: center;
+        }
+        .archives-singlebox{
+            
+             flex: 1;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             transition: 1s;
+        }
+        .archives-singlebox:hover{
+            transform: scale(1.1);
+        }
+
+.Archives-heading{
+ font-size: 8rem;
+}
+.archives-image{
+      max-width:20rem;
+      max-height: 45rem;
+      margin: 1rem;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  
+
+        /* archives design ends here */
+/* 
+ blog post design start here */
+
+        section#blog-post {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+
+.blog-image img {
+    max-width: 25%;
+    float: left;
+}
+
+section#blog-post h2 {
+    font-size: 4rem;
+    font-family: ui-monospace;
+}
+
+.blog-posts-contain {
+    
+    margin: 2rem;
+    align-items: center;
+    max-width: 60%;
+}
+
+.blog-singlebox {
+    flex-direction: column;
+    display: flex;
+    box-shadow: 1px 2px 3px;
+    transition: 1s;
+    margin: 1.5rem;
+}
+
+.blog {padding: 1rem;display: block;overflow: hidden;}
+
+.blog h3 {font-family: fangsong;margin-bottom: 5px;}
+
+.blog h4 {
+    font-family: fangsong;
+    margin-bottom: 5px;
+}
+
+.blog-singlebox:hover {
+    transform: scale(1.1);
+}
+
+.blog p {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.blog button {
+    border-style: none;
+    background-color: orange;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: -webkit-body;
+}
+
+
+
+
+    /* blog post design ends here */
+
+
+
+
+    /* contact design start here */
+
+ #contact{
+     background-color: gray;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 95vh;
+    flex-direction: column
+    }
+
+#contact-heading{
+   
+    font-size: 4rem;
+    padding: 2rem 0px;
+}
+.inputbox{
+ display: flex;
+ flex-direction: column;
+ box-shadow: 1px 2px 3px rgb(65, 60, 60);
+ padding: 2rem;
+
+}
+label{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+textarea{
+    resize: none;
+}
+#contact-btn{
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s;
+    text-transform: capitalize;
+}
+ #contact-btn:hover{
+     background-color: black;
+     color: white;
+ }       /* contact design start here */
+
+
+
+
+ /* footer design starts here */
+
+footer{
+    background-color: black;
+   display: flex;
+    height: 5vh;
+    color: white;
+   align-items: center;
+  justify-content: space-between;
+}
+ .copyrigtht{
+     font-size: 1.5rem;
+     padding: 0px 2rem;
+ 
+ }
+ .social-icon{
+    padding: 0px 2rem;
+ }
+ .social-icon i{
+    font-size: 1.5rem;
+    background-color: rgb(185, 14, 145);
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    
+ }
+ .social-icon i:hover{
+     background-color: rgb(182, 17, 17);
+     color: white;
+ }
+ /* footer design starts here *
